@@ -22,8 +22,11 @@ Once application started, use the two postman collections available inside **pos
 http://localhost:8080/h2-console
 
 JDBC URL - jdbc:h2:mem:TEST
+
 Username - sa
+
 Password - <blank>
+  
 
 ## Application Flows
 
