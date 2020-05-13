@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "1c83eb20-3572-499f-93c6-09967bb10834",
+		"name": "Employee Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Employees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaG9uaUBnbWFpbC5jb20iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE1ODkzOTI2ODMsImV4cCI6MTU4OTM5MjgwNX0.s_tc2IsTNHWab4d0R1ESyoyDkjPxSBrfQTCIgkOW8d0",
+						"type": "text"
+					}
+				],
+				"url": "localhost:8080/secure/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "Create an Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaG9uaUBnbWFpbC5jb20iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE1ODkzOTQ0MTcsImV4cCI6MTU4OTM5NDUzN30.NrUceZP61GPYtqaUCnc2R3s0yf81M-d-wLhuaHwgdNQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Sathish\",\n\t\"dept\" : \"Devps\" , \n\t\"email\" : \"sathish@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/secure/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "Update an Employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaG9uaUBnbWFpbC5jb20iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE1ODkzOTI2ODMsImV4cCI6MTU4OTM5MjgwNX0.s_tc2IsTNHWab4d0R1ESyoyDkjPxSBrfQTCIgkOW8d0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 1,\n\t\"dept\" : \"Testing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/secure/employee/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaG9uaUBnbWFpbC5jb20iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE1ODkzOTI2ODMsImV4cCI6MTU4OTM5MjgwNX0.s_tc2IsTNHWab4d0R1ESyoyDkjPxSBrfQTCIgkOW8d0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/secure/employee/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaG9uaUBnbWFpbC5jb20iLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE1ODkzOTQxNTgsImV4cCI6MTU4OTM5NDI3OH0.3qxWhSG3Sh2aJRGa0Ar5fEtPwCeBrDBUYPFDUaQUY9I",
+						"type": "text"
+					}
+				],
+				"url": "localhost:8080/secure/employee/1"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

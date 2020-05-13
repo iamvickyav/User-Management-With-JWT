@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "1ca3af0c-58f1-4614-976a-8c7d40fa30eb",
+		"name": "Admin Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"dhoni@gmail.com\", \n\t\"password\" : \"password@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"dhoni@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/password/change"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"dhoni@gmail.com\",\n\t\"newPassword\" :  \"password@456\",\n\t\"tokenFromEmail\" : \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/password/recreate"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
