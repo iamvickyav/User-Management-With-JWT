@@ -36,36 +36,65 @@ Admin user also can
 
 **For doing any of the above operations, admin has to provide JWT token in the Authorization header**
 
-### Login Flow [ POST Endpoint with PATH - /login ]
+## Unsecured Endpoints
+
+### Login Flow 
+
+[ POST Endpoint with PATH - /login ]
 
 Admin user has to login to get a valid JWT. You can find the email & password for admin user in data.sql file inside src/main/resources
 
-### Change Password Flow [POST Endpoint with PATH - /password/recreate ]
+---
+
+### Change Password Flow 
+
+[POST Endpoint with PATH - /password/recreate ]
 
 Admin user can change his password by hitting this endpoint. But for the password reset to be successful he has to send "tokenFromEmail" value (which is assumed to be shared via Email). For now the value is hardcoded & it is **12345**
 
+---
 
 ## Secured Endpoints
 
-### Get All Employees [GET with PATH - /secure/employees with valid JWT Token in Authorization header ]
+### Get All Employees
+
+[GET with PATH - /secure/employees with valid JWT Token in Authorization header ]
 
 To get all employees as List
 
+---
 
-### Get one Employees [GET with PATH - /employee/{employeeId} with valid JWT Token in Authorization header ]
+### Get one Employee
+
+[GET with PATH - /employee/{employeeId} with valid JWT Token in Authorization header ]
 
 To get details of a particular employee
 
-### Delete one Employees [DELETE method with PATH - /employee/{employeeId} with valid JWT Token in Authorization header ]
+---
+
+
+### Delete one Employee
+
+[DELETE method with PATH - /employee/{employeeId} with valid JWT Token in Authorization header ]
 
 To get details of a particular employee
 
-### Create new Employees [POST method with PATH - /employee/ with valid JWT Token in Authorization header ]
+---
+
+
+### Create new Employee
+
+[POST method with PATH - /employee/ with valid JWT Token in Authorization header ]
 
 To create a new Employee. 
 name, dept, email are mandatory fields
 
-### Update existing Employees [PUT method with PATH - /employee/ with valid JWT Token in Authorization header ]
+---
+
+
+### Update existing Employee
+
+[PUT method with PATH - /employee/ with valid JWT Token in Authorization header ]
 
 To update dept of existing Employee. 
 id, dept are mandatory fields
