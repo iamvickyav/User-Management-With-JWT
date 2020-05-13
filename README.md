@@ -17,6 +17,14 @@ In order for the applicaiton to run, you need to have Java installed in your sys
 
 Once application started, use the two postman collections available inside **postman_collection** folder in root of this project to test
 
+## To view DB
+
+http://localhost:8080/h2-console
+
+JDBC URL - jdbc:h2:mem:TEST
+Username - sa
+Password - <blank>
+
 ## Application Flows
 
 We have an admin user, who can
